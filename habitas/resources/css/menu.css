@@ -1,0 +1,49 @@
+main{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+#comunidades_div > form > button{
+    background-color: #1A2946;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 360px;
+    color: white;
+    outline: #121c2f69 0px solid;
+    transition: all 200ms ease-in-out;
+}
+
+#comunidades_div > form >  button{
+    background-color: #1A2946;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 360px;
+    color: white;
+    border: #1A2946;
+}
+
+#comunidades_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+
+#comunidades_div > form > button:hover{
+    outline: #121c2f69 10px solid;
+}
+
+#comunidades_div > form > button:active{
+    outline: #121c2fa9 10px solid;
+    width: 205px;
+    height: 205px;
+}
+
+.iconButton{
+    font-size: 60px;
+    padding-bottom: 10px;
+}

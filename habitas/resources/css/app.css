@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+@font-face {
+    font-family: 'Font-icono';
+    src: local('Artegra\ Sans\ SC\ W15\ SemiBold'), url('../fonts/Artegra\ Sans\ SC\ W15\ SemiBold.ttf');
+}
+.title-com{
+    font-family: 'Font-icono';
+    text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+    main > * {
+        padding-bottom: 101px !important;
+    }
+    .scroll-bar::-webkit-scrollbar {
+        width: 6px;
+    }
+}
+
+pre {
+    font-family: Figtree, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.scroll-bar::-webkit-scrollbar-thumb {
+    background-color: #61C2FF; 
+}

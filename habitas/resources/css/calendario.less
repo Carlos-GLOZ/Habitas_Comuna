@@ -1,0 +1,316 @@
+#caja-modal-eventoInfo { 
+    z-index: 999; 
+    opacity: 0; 
+    position: fixed; 
+    visibility: hidden;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0,0,0, 0.28); 
+    transition: all .4s; 
+} 
+
+#caja-modal-eventoEdit { 
+    z-index: 999; 
+    opacity: 0; 
+    position: fixed; 
+    visibility: hidden;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0,0,0, 0.28); 
+    transition: all .4s; 
+} 
+
+#caja-modal-eventoNew { 
+    z-index: 999; 
+    opacity: 0; 
+    position: fixed; 
+    visibility: hidden;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0,0,0, 0.28); 
+    transition: all .4s; 
+} 
+
+#caja-modal-comunidadEdit { 
+    z-index: 999; 
+    opacity: 0; 
+    position: fixed; 
+    visibility: hidden;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0,0,0, 0.28); 
+    transition: all .4s; 
+} 
+
+#caja-modal-comunidadInfo { 
+    z-index: 999; 
+    opacity: 0; 
+    position: fixed; 
+    visibility: hidden;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0,0,0, 0.28); 
+    transition: all .4s; 
+} 
+
+#caja-modal-comunidadEdit { 
+    z-index: 999; 
+    opacity: 0; 
+    position: fixed; 
+    visibility: hidden;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0,0,0, 0.28); 
+    transition: all .4s; 
+} 
+
+#caja-modal-selector-incidencias { 
+    z-index: 999; 
+    opacity: 0; 
+    position: fixed; 
+    visibility: hidden;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0,0,0, 0.28); 
+    transition: all .4s; 
+} 
+
+.caja-modal-eventoInfo-abierta { 
+    visibility: visible !important; 
+    opacity: 1 !important; 
+} 
+
+.caja-modal__content { 
+    border-radius: 4px; 
+    position: relative; 
+    width: 300px; 
+    min-height: 300px; 
+    background: #ffffff; 
+    padding: 1em 2em; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
+} 
+
+.btn-caja-modal { 
+    background-color: #fff; 
+} 
+
+.caja-modal__close { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    color: #585858; 
+    text-decoration: none; 
+    cursor: pointer;
+} 
+
+#caja-modal-selector-incidencias-lista {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+    // Esconder scrollbar para Edge y firefox
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+// Esconder scrollbar para Chrome, Safari y Opera
+.caja-modal-selector-incidencias-lista::-webkit-scrollbar {
+    width: 0px;
+}
+
+.caja-modal-selector-incidencias-lista-incidencia {
+    width: 100%;
+    height: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: solid 1px #00000045;
+    font-size: 20px;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.caja-modal-selector-incidencias-lista-incidencia:hover {
+    background-color: #ededed;
+}
+
+// Cursor pointer al ponerse encima de un evento
+a.fc-event {
+    cursor: pointer;
+}
+
+#titulo-modal-evento {
+    font-size: 20px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+#titulo-modal-evento-edit {
+    font-size: 20px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+#titulo-modal-eventoNew {
+    font-size: 20px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+#caja-fechas-modal-evento {
+    font-size: 14px;
+    color: gray;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#caja-fechas-modal-evento-edit {
+    font-size: 14px;
+    color: gray;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#caja-fechas-modal-evento-new {
+    font-size: 14px;
+    color: gray;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-incidencias-modal-evento {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#titulo-incidencias-modal-evento-edit {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#titulo-incidencias-modal-evento-new {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#incidencias-modal-evento-new-incidencias-boton {
+    border: solid 1px #6b7280;
+    width: 31px;
+    aspect-ratio: 1;
+    font-size: 20px;
+}
+
+#incidencias-modal-evento-edit-incidencias-boton {
+    border: solid 1px #6b7280;
+    width: 31px;
+    aspect-ratio: 1;
+    font-size: 20px;
+}
+
+.chip-incidencia {
+    display: inline-block;
+    width: fit-content;
+    max-width: 45%;
+
+    background-color: #0000000f;
+    border-radius: 7px;
+
+    margin: 0;
+    padding: 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    transition-duration: .2s;
+}
+
+.chip-incidencia:hover {
+    transform: scale(.95);
+}
+
+
+.chip-incidencia-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.chip-incidencia-punto {
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+}
+
+.chip-incidencia-texto {
+    max-width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.chip-incidencia-estado0 {
+    background-color: rgb(217, 210, 80);
+}
+
+.chip-incidencia-estado1 {
+    background-color: #fa000087;
+}
+
+.chip-incidencia-estado2 {
+    background-color: #f79a059c;
+}
+
+.chip-incidencia-estado3 {
+    background-color: rgb(89, 217, 80);
+}
+
+.input-invalido {
+    border-color: red;
+}

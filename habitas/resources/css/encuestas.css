@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .contenedor-lista-enc {
+    @apply flex justify-center min-w-full h-full flex-col items-center;
+  }
+  .contenedor-modal {
+    @apply fixed z-50 left-0 top-0 w-screen h-screen flex items-center justify-center overflow-auto bg-black bg-opacity-40;
+  }
+  .btn-ceder-boton {
+    @apply rounded-lg px-4 py-2 bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300;
+  }
+  .btn-crear-pregunta {
+    @apply w-full font-bold text-base px-5 py-2 bg-cyan-500 rounded text-white transition-all duration-200 hover:bg-cyan-700;
+  }
+  .btn-nueva-opcion {
+    @apply px-5 py-2 font-bold bg-cyan-500 rounded text-white transition-all duration-200 hover:bg-cyan-700;
+  }
+  .btn-delegar-voto {
+    @apply inline-block bg-blue-400 rounded-md px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-blue-600 text-white transition duration-300 ease-in-out w-full;
+  }
+}
