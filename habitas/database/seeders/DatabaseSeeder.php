@@ -21,56 +21,6 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // Super Admins
-
-        User::create([
-            'name' => 'Sergio',
-            'apellidos' => 'TEST T',
-            'password' => Hash::make('qweQWE123'),
-            'email' => 'sergio.comsace@gmail.com',
-            'super_admin' => true,
-            'language' => 'es',
-            'email_verified_at' => str(Carbon::now())
-        ]);
-        User::create([
-            'name' => 'Erik',
-            'apellidos' => 'TEST T',
-            'password' => Hash::make('qweQWE123'),
-            'email' => 'erikrm02@gmail.com',
-            'super_admin' => true,
-            'language' => 'es',
-            'email_verified_at' => str(Carbon::now())
-        ]);
-        User::create([
-            'name' => 'Carlos',
-            'apellidos' => 'TEST T',
-            'password' => Hash::make('qweQWE123'),
-            'email' => 'carlos@gmail.com',
-            'super_admin' => true,
-            'language' => 'es',
-            'email_verified_at' => str(Carbon::now())
-        ]);
-
-        User::create([
-            'name' => 'fabrica',
-            'apellidos' => 'TEST T',
-            'password' => Hash::make('qweQWE123'),
-            'email' => 'fabrizio282002@gmail.com',
-            'super_admin' => true,
-            'language' => 'es',
-            'email_verified_at' => str(Carbon::now())
-        ]);
-
-        User::create([
-            'name' => 'alex',
-            'apellidos' => 'TEST T',
-            'password' => Hash::make('qweQWE123'),
-            'email' => '100007906.joan23@fje.edu',
-            'super_admin' => true,
-            'language' => 'es',
-            'email_verified_at' => str(Carbon::now())
-        ]);
-
         // LQSA
 
         User::create([
